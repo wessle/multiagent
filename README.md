@@ -4,5 +4,5 @@ This package contains basic tools to test consensus-based on- and off-policy mul
 ### Installation
 Once you've cloned the repository, simply `cd` into it and do `pip install -e .`.
 
-# Dislaimer:
+### DISCLAIMER:
 All code in this repository should be considered a work-in-progress -- use it at your own risk!
