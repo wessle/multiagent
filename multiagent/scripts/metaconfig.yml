@@ -1,0 +1,30 @@
+# Environment parameters and seed.
+env_seed: [1994]    # seed for the environment and consensus matrices
+agent_seed: [1789, 1848, 1952, 1953, 1988]    # seed for the agents (and env initialization)
+
+num_states: [10]
+num_state_features: [5]
+num_agents: [5]
+num_actions: [2]
+min_reward_mean: [0]
+max_reward_mean: [1]
+reward_var: [0.1]
+
+# Episode and other parameters.
+num_trains: [1000]    # number of target policy tests during training
+trial_length: [1000]    # number of episodes for each target policy test
+num_episodes: [10]    # to train using behavior policy between each target policy test
+episode_length: [100]    # length of each episode
+
+# Agent and training parameters.
+actor_lr: [0.001]
+critic_lr: [0.01]
+lambda_pi: [0.1]
+lambda_v: [0.9]
+gamma: [0.99]
+cov: [0.1]
+clip_grads: [True]
+clip_rho: [True]
+
+model: [maopac]
+results_path: [results]

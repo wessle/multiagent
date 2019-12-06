@@ -1,0 +1,29 @@
+# Environment parameters and seed.
+env_seed: 1994    # seed for the environment and consensus matrices
+agent_seed: 1988    # seed for the agents (and env initialization)
+
+num_states: 10
+num_state_features: 5
+num_agents: 5
+num_actions: 2
+min_reward_mean: 0
+max_reward_mean: 1
+reward_var: 0.1
+
+# Episode and other parameters.
+episode_length: 100
+num_episodes: 100
+
+# Agent and training parameters.
+policy_units: 64
+value_units: 64
+actor_lr: 0.001
+critic_lr: 0.01
+lambda_pi: 0.9
+lambda_v: 0.9
+gamma: 0.99
+cov: 0.1
+clip_grads: True
+
+model: maac
+results_path: results
