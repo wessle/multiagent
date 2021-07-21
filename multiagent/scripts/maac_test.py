@@ -78,11 +78,20 @@ if __name__ == '__main__':
     runner.specify_episode(episode_length, num_episodes)
     runner.init_agents(policy_units, value_units, actor_lr, critic_lr,
                        lambda_pi, lambda_v, gamma, cov, clip_grads)
+
+
+    ## Linear runner.
+    # np.random.seed(agent_seed)
+    # runner = runner.LinearMAACRunner(env, c1)
+    # runner.specify_episode(episode_length, num_episodes)
+    # runner.init_agents(0.001, 0.01, lambda_pi, lambda_v, gamma,
+    #                    cov, clip_grads)
     
     
     # Do the test.
     start = time.time()
     rewards = runner.train()
+    print('Training...')
     end = time.time()
     print('Completed {} episodes in {:.2f}m'.format(
             num_episodes, (end-start)/60))

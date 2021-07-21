@@ -12,7 +12,7 @@ reward_var: 0.1
 
 # Episode and other parameters.
 episode_length: 100
-num_episodes: 100
+num_episodes: 10
 
 # Agent and training parameters.
 policy_units: 64
